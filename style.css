@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
+  border: .1rem solid red;
 }
 
 :root{
@@ -50,6 +51,14 @@ li{
 
 .wrapper{
   max-width: 1400px;
+
+img{
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block; 
+}
+
   /* background: gold; */
   margin: auto;
   padding-inline: 1.5rem;
@@ -104,6 +113,10 @@ li{
 
 }
 
+.mobile-menu{
+  display: none;
+}
+
 
 
 /* HEADER STYLING */
@@ -118,6 +131,14 @@ li{
 
 
 /*SECTIONS STYLING*/
+.hero-section{
+  min-height: calc(100vh - 14vh);
+}
+
+.content, 
+.image-container{
+  flex: 1;
+}
 
 
 
@@ -135,7 +156,7 @@ li{
     display: block;
   }
 
-  .mobile-menu{
+  .mobile-menu{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +179,7 @@ li{
 
   .mobile-menu-active{
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
   }
 
   
