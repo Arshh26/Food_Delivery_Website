@@ -69,9 +69,14 @@ img{
   text-align: center;
 }
 
+.mt-4{
+  margin-top: 4rem;
+
+}
+
 /* SECTION 01 */
 
-h5{
+/* h5{
   font-size: 1.2rem;
   letter-spacing: .2rem;
   color: var(--gold-finger);
@@ -87,9 +92,9 @@ h2{
 
 h3{
   font-size: 2rem;
-  text-transform:capitalize;
-  color: var(--lead)
-}
+  text-transform: capitalize;
+  color: var(--lead);
+} */
   /* background: gold; */
   margin: auto;
   padding-inline: 1.5rem;
@@ -213,6 +218,57 @@ p{
 
 }
 
+/* SECTION 01 */
+
+h5{
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  color: var(--gold-finger);
+  text-transform: uppercase;
+
+}
+
+h2{
+  font-size: 3.7rem;
+  text-transform: capitalize;
+  color: var(--lead);
+}
+
+h3{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--lead);
+}
+
+.service-card h3{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem; 
+
+
+}
+
+/* Section 02 */
+
+
+.order-card{
+  flex: 1;
+  flex-basis: 300px;
+  background: var(--pure-white);
+  border: .1rem solid var(--gold-finger);
+  border-radius: 2rem; 
+  box-shadow: rgba(0, 0, 0, 0.05)  8px 8px 8px;
+  box-shadow: rgba(0, 0, 0, 0.05)  8px 8px 8px inset;
+}
+
+
+.order-card img{
+   width: 15rem;
+}
+ 
+
+
+
+
 /* FOOTER STYLING */
 
 
@@ -259,6 +315,8 @@ p{
 
   /* SECTIONS STYLING */
 
+  /* Hero Styling */
+
   h1{
     font-size: 3.6rem;
 
@@ -275,6 +333,13 @@ p{
  
   .gap-4{
     gap: 4rem;
+  }
+
+  /* SECTION 01 */
+
+  h2{
+    font-size: 3rem;
+
   }
   
 
