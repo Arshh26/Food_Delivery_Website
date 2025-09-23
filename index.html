@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Delivery Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
 <body>
   <!-- HEADER PART -->
@@ -13,34 +18,37 @@
     <nav class="navbar flex between wrapper">
       <a href="#" class="logo">Foodie.</a>
 
-      <!-- DESKTOP MENU -->
+<!-- DESKTOP MENU -->
       <ul class="navlist flex gap-3">
          <li>
-          <a href="#" class>Home</a>
-        </li>
-        <li>
-          <a href="#" class>Menu</a>
-        </li>
-        <li>
-          <a href="#" class>Services</a>
-        </li>
-        <li>
-          <a href="#" class>About us</a>
-        </li>
-        <li>
-          <a href="#" class>Contacts</a>
-        </li>
+            <a href="#" class>Home</a>
+         </li>
+         <li>
+            <a href="#" class>Menu</a>
+         </li>
+         <li>
+           <a href="#" class>Services</a>
+         </li>
+         <li>
+           <a href="#" class>About us</a>
+         </li>
+         <li>
+           <a href="#" class>Contacts</a>
+         </li>
       </ul>
+
       <div class="desktop-action flex gap-2">
         <a href="#" class="cart-icon">
           <i class="fa-solid fa-bag-shopping"></i>
           <span class="cart-value">0</span>
         </a>
+
         <a href="#" class="btn">
           Sign in
           &nbsp;
           <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </a>
+
         <a href="#" class="hamburger">
           <i class="fa-solid fa-bars"></i>
         </a>
@@ -49,32 +57,35 @@
       <!-- MOBILE MENU -->
        
       <ul class="mobile-menu">
-         <li>
+        <li>
           <a href="#" class>Home</a>
         </li>
+
         <li>
           <a href="#" class>Menu</a>
         </li>
+
         <li>
           <a href="#" class>Services</a>
         </li>
+
         <li>
           <a href="#" class>About us</a>
         </li>
+
         <li>
           <a href="#" class>Contacts</a>
-          <li>
-            <a href="#" class="btn">
+        <li>
+        <a href="#" class="btn">
           Sign in
           &nbsp;
           <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </a>
-          </li>
         </li>
-      </ul>
-    </nav>
-
-   </header>
+      </li> 
+    </ul>
+  </nav>
+</header>
 
    <!-- SECTIONS PART -->
   <main>
@@ -85,9 +96,11 @@
             Enjoy Your Delicious 
             <span>Food</span>
           </h1>
+
           <p class="para">
             We will fill your tummy with delicious<br> food with fast delivery.<br>
           </p>
+
           <div class="flex gap-2">
             <a href="#" class="btn">Order Now</a>
             <a href="#" class="social-icon">
@@ -106,12 +119,12 @@
               <i class="fa-brands fa-google-plus-g"></i>
             </a>
           </div>
-
         </div>
 
         <div class="image-container">
           <img src="images/delivery-boy.png">
         </div>
+
       </div>
     </section>
 
@@ -144,66 +157,51 @@
              <p>It is not only fast for us but also number one in quality.</p>
            </div>
          </div>
+    </section>
 
-<!-- </div>
-<div class="service-card">
-    <div class="images-container">
-      <img src="images/fast-delivery.png">
+<section>
+  <div class="wrapper p-top">
+    <div class="text-center">
+      <h5>Our Menu</h5>
+      <h2>The Most Popular</h2>
     </div>
-    <h3>Fast Delivery</h3>
-    <p class="">Delivery that is always on time, and even faster.</p>
-  </div>
-</div>
-<div class="service-card">
-    <div class="images-container">
-      <img src="images/best-quality.png">
-    </div>
-    <h3>Best Quality</h3>
-    <p class="">It is not only fast for us but also number one in quality.</p>
-  </div>
-</div>
+
+    <div class="card-list text-center flex mt-4 gap-2">
+
+      <!-- <div class="order-card">
+        <img src="images/burger.png">
+        <h4>Double Beef Burger</h4>
+        <h4 class="price">₹180</h4>
+        <a href="#" class="btn">Add to Cart</a>
       </div> -->
-    </section>
+</div>
+    </div>
+  </div>
+</section>
+<section>
 
-    <section>
-      <div class="wrapper p-top">
-        <div class="text-center">
-          <h5>Our Menu</h5>
-          <h2>The Most Popular</h2>
-        </div>
-        <div class="card-list text-center flex">
-          <div class="order-card">
-            <img src="images/burger.png">
-          </div>
-          <h4>Double Beef Burger</h4>
-          <h4 class="price">₹180</h4>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="order-card">
-            <img src="images/burger.png">
-          </div>
-          <h4>Double Beef Burger</h4>
-          <h4 class="price">₹180</h4>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="order-card">
-            <img src="images/burger.png">
-          </div>
-          <h4>Double Beef Burger</h4>
-          <h4 class="price">₹180</h4>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="order-card">
-            <img src="images/burger.png">
-          </div>
-          <h4>Double Beef Burger</h4>
-          <h4 class="price">₹180</h4>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-      </div>
-      </div>
-    </section>
+</section>
+<div class="wrapper p-top flex gap-3">
+  <div class="image-container">
+    <img src="images/delivery-boy-with-phone.png">
+  </div>
 
+<div class="content">
+  <h5>Our Reviews</h5>
+  <h2>What They Say</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+</div>
+  </section>
   </main>
 
   <!-- FOOTER -->
@@ -211,5 +209,9 @@
   <footer>
 
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>
+
+
+<!-- 1:38:02 -->
