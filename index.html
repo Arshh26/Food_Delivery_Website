@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Delivery Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+
   <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+
+  <script defer src="main.js"></script>
 </head>
+
 <body>
   <!-- HEADER PART -->
-   <header>
+  <header>
     <nav class="navbar flex between wrapper">
       <a href="#" class="logo">Foodie.</a>
 
-<!-- DESKTOP MENU -->
+      <!-- DESKTOP MENU -->
       <ul class="navlist flex gap-3">
-         <li>
-            <a href="#" class>Home</a>
-         </li>
-         <li>
-            <a href="#" class>Menu</a>
-         </li>
-         <li>
-           <a href="#" class>Services</a>
-         </li>
-         <li>
-           <a href="#" class>About us</a>
-         </li>
-         <li>
-           <a href="#" class>Contacts</a>
-         </li>
+        <li>
+          <a href="#" class>Home</a>
+        </li>
+        <li>
+          <a href="#" class>Menu</a>
+        </li>
+        <li>
+          <a href="#" class>Services</a>
+        </li>
+        <li>
+          <a href="#" class>About us</a>
+        </li>
+        <li>
+          <a href="#" class>Contacts</a>
+        </li>
       </ul>
 
       <div class="desktop-action flex gap-2">
@@ -55,7 +61,7 @@
       </div>
 
       <!-- MOBILE MENU -->
-       
+
       <ul class="mobile-menu">
         <li>
           <a href="#" class>Home</a>
@@ -76,24 +82,24 @@
         <li>
           <a href="#" class>Contacts</a>
         <li>
-        <a href="#" class="btn">
-          Sign in
-          &nbsp;
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        </a>
+          <a href="#" class="btn">
+            Sign in
+            &nbsp;
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </a>
         </li>
-      </li> 
-    </ul>
-  </nav>
-</header>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-   <!-- SECTIONS PART -->
+  <!-- SECTIONS PART -->
   <main>
     <section>
       <div class="hero-section flex wrapper gap-4">
         <div class="content">
           <h1>
-            Enjoy Your Delicious 
+            Enjoy Your Delicious
             <span>Food</span>
           </h1>
 
@@ -114,7 +120,7 @@
             <a href="#" class="social-icon">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            
+
             <a href="#" class="social-icon">
               <i class="fa-brands fa-google-plus-g"></i>
             </a>
@@ -132,7 +138,7 @@
       <div class="wrapper p-top">
         <div class="text-center">
           <h5>Our Services</h5>
-          <h2>How does it work?</h2> 
+          <h2>How does it work?</h2>
         </div>
         <div class="flex text-center mt-4 gap-4">
           <div class="service-card">
@@ -141,67 +147,159 @@
             </div>
             <h3>Easy to Order</h3>
             <p>You only need a few simple steps to order food.</p>
-        </div>
-        <div class="service-card">
-          <div class="images-container">
-           <img src="images/fast-delivery.png">
           </div>
-           <h3>Fast Delivery</h3>
-           <p>Delivery that is always on time, and even faster.</p>
-         </div>
-         <div class="service-card">
-           <div class="images-container">
-             <img src="images/best-quality.png">
-           </div>
-             <h3>Best Quality</h3>
-             <p>It is not only fast for us but also number one in quality.</p>
-           </div>
-         </div>
+          <div class="service-card">
+            <div class="images-container">
+              <img src="images/fast-delivery.png">
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Delivery that is always on time, and even faster.</p>
+          </div>
+          <div class="service-card">
+            <div class="images-container">
+              <img src="images/best-quality.png">
+            </div>
+            <h3>Best Quality</h3>
+            <p>It is not only fast for us but also number one in quality.</p>
+          </div>
+        </div>
     </section>
 
-<section>
-  <div class="wrapper p-top">
-    <div class="text-center">
-      <h5>Our Menu</h5>
-      <h2>The Most Popular</h2>
-    </div>
+    <section>
+      <div class="wrapper p-top">
+        <div class="text-center">
+          <h5>Our Menu</h5>
+          <h2>The Most Popular</h2>
+        </div>
 
-    <div class="card-list text-center flex mt-4 gap-2">
+        <div class="card-list text-center flex mt-4 gap-2">
 
-      <!-- <div class="order-card">
+          <!-- <div class="order-card">
         <img src="images/burger.png">
         <h4>Double Beef Burger</h4>
         <h4 class="price">₹180</h4>
         <a href="#" class="btn">Add to Cart</a>
       </div> -->
-</div>
-    </div>
-  </div>
-</section>
-<section>
-
-</section>
-<div class="wrapper p-top flex gap-3">
-  <div class="image-container">
-    <img src="images/delivery-boy-with-phone.png">
-  </div>
-
-<div class="content">
-  <h5>Our Reviews</h5>
-  <h2>What They Say</h2>
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-
+        </div>
       </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section>
+
+    </section>
+    <div class="wrapper p-top flex gap-3">
+      <div class="image-container">
+        <img src="images/delivery-boy-with-phone.png">
+      </div>
+      <div class="content">
+        <h5>Our Reviews</h5>
+        <h2>What They Say</h2>
+        <div class="review-container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper mt-4">
+              <div class="swiper-slide">
+                <div class="flex gap-2">
+                  <div class="profile">
+                    <img src="images/profile1.jpeg">
+                  </div>
+                  <div>
+                    <h4>Abraham</h4>
+                    <div class="mt-half">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="para">The food was absolutely delicious! Every dish was fresh, well-prepared, and served hot. The flavors
+                  were perfectly balanced, and the portions were generous. I especially loved the quick service and neat
+                  presentation. It felt like real value for money, and I would definitely recommend this place to anyone
+                  who enjoys good quality food.</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex gap-2">
+                  <div class="profile">
+                    <img src="images/profile2.jpeg">
+                  </div>
+                  <div>
+                    <h4>Roshni</h4>
+                    <div class="mt-half">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="para">The food was very tasty and had a nice homemade feel. The spices were just right, and the dishes were
+                  served on time. The only thing I felt could improve was the dessert section, but overall it was a
+                  really good experience. I’d love to order again!</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex gap-2">
+                  <div class="profile">
+                    <img src="images/profile3.jpeg">
+                  </div>
+                  <div>
+                    <h4>Sushma</h4>
+                    <div class="mt-half">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="para">Delicious food with rich flavors, served fresh and hot!</p>
+              </div>
+            </div>
+
+            <div class="flex between">
+              <a href="#" class="arrow" id="prev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+
+              <a href="#" class="arrow" id="next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+<div class="wrapper p-top ">
+  <div class="app-container flex between">
+    <div class="image-container">
+    <img src="images/mobile-app.png">
+  </div>
+
+  <div class="content">
+    <h5>Our Application</h5>
+    <h2>Simple Way To<br> Fill Your Tummy</h2>
+    <p class="para">Discover food anytime, anywhere, <br>and  get it delivered quickly.</p>
+    <a href="#" class="btn">Get the app</a>
   </div>
 </div>
+      <section>
+    </div>
+
+  
+      <section>
+<div class="wrapper p-top">
+  <div>
+    <h5>Our Subscribe</h5>
+  <h2>Subscribe to our Newsletter</h2>
+  <p class="para m-auto">
+    We Recommend you to subscribe our newspaper, drop your email below to get daily update abput us. 
+  </p>
+  </div>
+
 </div>
-  </section>
+      </section>
   </main>
 
   <!-- FOOTER -->
@@ -211,7 +309,8 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
+
 </html>
 
 
-<!-- 1:38:02 -->
+<!-- 2:11:53 -->
