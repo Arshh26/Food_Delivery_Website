@@ -88,7 +88,7 @@ img {
 }
 
 .m-auto{
-  margin: auto ;
+  margin: auto;
 }
 /* SECTION 01 */
 
@@ -365,7 +365,7 @@ h4 {
   padding: .8rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 5px 8px;
   border-radius: 1rem;
-  margin: 4rem auto 0 auto;
+  /* margin: 4rem auto 0 auto; */
 
 
 
@@ -375,7 +375,7 @@ input[type="email"]{
   flex: 1;
   height: 7vh;
   background: transparent;
-  border-radius: none;
+  border: none;
   font-size: 1.1rem;
   padding-left: 1rem;
 
