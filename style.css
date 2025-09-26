@@ -289,8 +289,57 @@ h4 {
 .order-card .price {
   font-size: 1.7rem;
   color: var(--gold-finger);
+
   padding: 1.3rem 0 2rem 0;
 }
+
+/* Cart tab styling */
+
+.cart-tab{
+  background: var(--hint-yellow);
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: 25rem;
+  padding-block: 2rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.cart-list{
+  flex: 1;
+  max-width: 100%;
+
+}
+
+.total-container{
+  width: 100%;
+  background: var(--gold-finger);
+  text-align: center;
+  margin-block: 1rem;
+  padding-block: 1rem;
+
+}
+
+.total-container h4{
+  display:inline-block;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.btn-container .btn{
+  background: var(--lead);
+  transition: .3s ease-in-out;
+}
+
+.btn-container .btn:hover {
+  background-color: var(--gold-finger);
+  color: var(--lead);
+}
+
 
 /*Section 03*/
 .review-container {
@@ -365,7 +414,7 @@ h4 {
   padding: .8rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 5px 8px;
   border-radius: 1rem;
-  /* margin: 4rem auto 0 auto; */
+  margin: 4rem auto 0 auto;
 
 
 
@@ -394,8 +443,18 @@ input[type="email"]:focus{
 
 }
 
+.footer-container .flex{
+  align-items: flex-start;
+}
+
 .footer-wrapper {
   flex: 1;
+  flex-basis: 150px;
+}
+
+.footer-wrapper:nth-child(1){
+  flex: 2;
+  flex-basis: 300px;
 }
 
 .footer-wrapper .social-icon {
@@ -405,6 +464,17 @@ input[type="email"]:focus{
 .footer-wrapper .social-icon:hover{
   background: var(--lead);
   color: var(--pure-white);
+}
+
+.footer-link {
+  color: gray;
+  font-size: 1.1rem;
+  transition: .3s ease-in-out;
+
+}
+
+.footer-link:hover{
+  color: var(--lead);
 }
 
 
