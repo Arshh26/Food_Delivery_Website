@@ -12,6 +12,10 @@ const closeBtn = document.querySelector(".close-btn");
 const cardList = document.querySelector(".card-list");
 const cartList = document.querySelector(".cart-list");
 const cartTotal = document.querySelector(".cart-total");
+const cartValue = document.querySelector(".cart-value");
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+const bars = document.querySelector(".fa-bars");
 
 cartIcon.addEventListener("click", () =>
   cartTab.classList.add("cart-tab-active")
@@ -21,20 +25,34 @@ closeBtn.addEventListener("click", () =>
   cartTab.classList.remove("cart-tab-active")
 );
 
+hamburger.addEventListener("click", () =>
+  mobileMenu.classList.toggle("mobile-menu-active")
+);
+
+hamburger.addEventListener("click", () => bars.classList.toggle("fa-bars"));
+
+hamburger.addEventListener("click", () => bars.classList.toggle("fa-xmark"));
+
 let productList = [];
 let cartProduct = [];
 
 const updateTotals = () => {
   let totalPrice = 0;
+  let totalQuantity = 0;
   document.querySelectorAll(".item").forEach((item) => {
+    const quantity = parseInt(
+      item.querySelector(".quantity-value").textContent
+    );
     const price = parseFloat(
       item.querySelector(".item-total").textContent.replace("₹", "")
     );
 
     totalPrice += price;
+    totalQuantity += quantity;
   });
 
   cartTotal.textContent = `₹${totalPrice.toFixed(2)}`;
+  cartValue.textContent = totalQuantity;
 };
 const showCards = () => {
   productList.forEach((product) => {
@@ -105,6 +123,7 @@ const addToCart = (product) => {
     quantity++;
     quantityValue.textContent = quantity;
     itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
+    updateTotals();
   });
 
   minusBtn.addEventListener("click", (e) => {
@@ -113,12 +132,14 @@ const addToCart = (product) => {
       quantity--;
       quantityValue.textContent = quantity;
       itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
+      updateTotals();
     } else {
       cartItem.classList.add("slide-out");
 
       setTimeout(() => {
         cartItem.remove();
         cartProduct = cartProduct.filter((item) => item.id !== product.id);
+        updateTotals();
       }, 300);
     }
   });
